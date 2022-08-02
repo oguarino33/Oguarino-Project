@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Radar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css" />
+  <style>
+    body {
+      font-family: 'Cabin';
+    }
+
+    a {
+          color: white;
+           text-decoration: none;
+       }
+
+       .padding-right {
+          padding-right: 15px;
+      }
+
+       footer {
+          width: 100%;
+          float: left;
+          padding: 20px;
+          text-align: center;
+           background-color: rgb(182, 100, 145);
+        }
+
+      footer a:hover.hover-color {
+           color: rgb(228, 203, 224);
+          text-decoration: none;
+       }
+  </style>
+</head>
+
+<body>
+  <header class="page-4">
+    <a class="logo" href="index.html"><span>Food & Cooking</span></a>
+    <nav>
+      <ul>
+        <li class="active-page">
+          <a href="index.html">Splash</a>
+        </li>
+        <li>
+          <a href="images-and-text-01.html">Gallery</a>
+        </li>
+        <li>
+          <a href="page-3.html">Videos</a>
+        </li>
+        <li>
+          <a href="page-4.html">Radar</a>
+        </li>
+        <li>
+          <a href="page-5.html">Local Finds</a>
+        </li>
+        <li>
+          <a href="page-6.html">About Us</a>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="images-and-text-01.html">Gallery</a>
+          <a href="page-3.html">Videos</a>
+          <a href="page-4.html">Radar</a>
+          <a href="page-5.html">Local Finds</a>
+          <a href="page-6.html">About Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <article>
+    <div>
+      <h1>Radar</h1>
+      <p style="text-align:center;">
+      Want to discover new food in the Orange County area?
+      Check out this top 10 from 
+      <a style="color:blue"  href="https://familydestinationsguide.com/best-restaurants-in-orange-county-ca/." target="_blank"> https://en.wikipedia.org/wiki/Fruit</a>
+      </p>
+      <table id="your-table-items" class="center">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type of Food</th>
+            <th>City</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Khan Saab Desi Craft Kitchen</td>
+            <td>Indian, Pakastani, Halal</td>
+            <td>Fullerton</td>
+            <td>229 E Commonwealth Ave Unit A, 
+              Fullerton, CA 92832</td>
+          </tr>
+          <tr>
+            <td>Smoke Queen Barbecue</td>
+            <td>American, BBQ</td>
+            <td>Garden Grove</td>
+            <td>12941 9th St, Garden Grove, CA 92840</td>
+          </tr>
+          <tr>
+            <td>Rodeo 39 Public Market</td>
+            <td>Food Court</td>
+            <td>Stanton</td>
+            <td>12885 Beach Blvd, Stanton, CA 90680</td>
+          </tr>
+          <tr>
+            <td>Blinking Owl Distillery</td>
+            <td>Distilleries, American</td>
+            <td>Santa Ana</td>
+            <td>802 E Washington Ave, Santa Ana, CA 92701</td>
+          </tr>
+          <tr>
+            <td>Nep Cafe</td>
+            <td>Breakfast, Brunch, Vietnamese</td>
+            <td>Fountain Valley</td>
+            <td>10836 Warner Ave, Fountain Valley, CA 92708</td>
+          </tr>
+          <tr>
+            <td>Knife Pleat</td>
+            <td>French, Dessert</td>
+            <td>Costa Mesa</td>
+            <td>3333 S Bristol St, Costa Mesa, CA 92626</td>
+          </tr>
+          <tr>
+            <td>Paradise Dynasty</td>
+            <td>Shanghainese, Dim Sum</td>
+            <td>Costa Mesa</td>
+            <td>3333 Bristol Street, BLM, 1 Bloomingdale's, 
+              Costa Mesa, CA 92626</td>
+          </tr>
+          <tr>
+            <td>Tim Ho Wan</td>
+            <td>Dim Sum</td>
+            <td>Irvine</td>
+            <td>2700 Alton Pkwy, Irvine, CA 92606</td>
+          </tr>
+          <tr>
+            <td>Porch and Swing</td>
+            <td>American, Cocktail Bar</td>
+            <td>Irvine</td>
+            <td>2010 Main St Suite 170, Irvine, CA 92614</td>
+          </tr>
+          <tr>
+            <td>Veg’D</td>
+            <td>Vegetarian</td>
+            <td>Costa Mesa</td>
+            <td>280 Bristol St, Costa Mesa, CA 92626</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+  <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+  <!-- BEG JavaScript -->
+  <script>
+    $(document).ready(function () {
+      $("table#your-table-items").tablesorter({
+        sortList: [[2, 0]],
+        CssAsc: "tablesorter-headerAsc",
+        CssDesc: "tablesorter-headerDesc"
+      });
+    });
+  </script>
+  <!-- END JavaScript -->
+
+
+  <footer>
+    <section class="content" style="margin-top:1%">
+    <div>
+        <a href="http://www.facebook.com/" target="_blank"
+         class="fa fa-facebook-f fa-lg fa-2x hover-color padding-right"></a>
+        <a href="http://www.instagram.com/" target="_blank"
+          class="fa fa-instagram fa-lg fa-2x hover-color padding-right"></a>
+        <a href="http://www.twitter.com/" target="_blank"
+          class="fa fa-brands fa-twitter fa-lg fa-2x hover-color padding-right"></a>
+    </div>
+  </section>
+
+    <section class="content" style="font-size: 10pt; color: white; margin-top: 2%;">
+      ©2018-2038 Healthy Food LLC. All Rights Reserved.
+    </section>
+  </footer>
+
+</body>
+
+</html>
